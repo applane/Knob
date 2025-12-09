@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="0dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/cardSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="#EC84A7"
+            android:text="\ue030"
+            android:textSize="140dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/materialicons"/>
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#DF6790"
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#EC84A7"
+        android:text=""
+        android:textSize="24dp"/>
+    </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/roundselector"
+        android:onClick="onPlayClick"
+        android:textAlignment="center"
+        android:text="\ue037"
+        android:textSize="50dp"
+        android:fontFamily="@font/materialicons"
+        android:textColor="#E1C7D0"/>
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/skipselector"
+        android:gravity="center"
+        android:onClick="onSkipClick"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="skip"
+        android:textColor="#606060"
+        android:textSize="15dp" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+</LinearLayout>

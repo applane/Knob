@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Knob</string>
+    <string name="cancel">Cancel</string>
+    <string name="perm_title">Permissions Required</string>
+    <string name="perm_required">This application needs access to audio files and notifications to play music.</string>
+    <string name="no_music">No music files found</string>
+    <string name="settings">Settings</string>
+</resources>
