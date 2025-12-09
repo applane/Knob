@@ -1,4 +1,4 @@
-![](assets/icon.png)
+<img src="assets/icon.png" width="60"/>
 
 # Knob
 
@@ -6,5 +6,5 @@ Knob is a minimalist music player that turns your device into a private, local â
 
 Enjoy!
 
-![](assets/screenshot.png)
+<img src="assets/screenshot.png" width="300"/>
 
