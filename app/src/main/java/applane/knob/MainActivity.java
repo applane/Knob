@@ -198,7 +198,7 @@ public class MainActivity extends AppCompatActivity {
         mediaBrowser.connect();
     }
 
-    private MediaBrowserCompat.ConnectionCallback mediaBrowserCallback
+    private final MediaBrowserCompat.ConnectionCallback mediaBrowserCallback
             = new MediaBrowserCompat.ConnectionCallback() {
         @Override
         public void onConnected() {
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private MediaControllerCompat.Callback mediaControllerCallback =
+    private final MediaControllerCompat.Callback mediaControllerCallback =
             new MediaControllerCompat.Callback() {
                 @Override
                 public void onPlaybackStateChanged(PlaybackStateCompat state) {
@@ -302,7 +302,7 @@ public class MainActivity extends AppCompatActivity {
         gestureDetector = new GestureDetector(this,
                 new GestureDetector.SimpleOnGestureListener() {
                     @Override
-                    public boolean onDoubleTap(MotionEvent e) {
+                    public boolean onDoubleTap(@NonNull MotionEvent e) {
                         onMusicFolderSelect();
                         return true;
                     }

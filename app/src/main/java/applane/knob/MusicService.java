@@ -44,7 +44,7 @@ public class MusicService extends MediaBrowserServiceCompat implements
     private Song song = new Song();
     Bitmap largeIcon = null;
 
-    private BroadcastReceiver noisyReceiver = new BroadcastReceiver()
+    private final BroadcastReceiver noisyReceiver = new BroadcastReceiver()
     {
         @Override
         public void onReceive(Context context, Intent intent)
@@ -53,7 +53,7 @@ public class MusicService extends MediaBrowserServiceCompat implements
         }
     };
 
-    private MediaSessionCompat.Callback mediaSessionCallback = new MediaSessionCompat.Callback()
+    private final MediaSessionCompat.Callback mediaSessionCallback = new MediaSessionCompat.Callback()
     {
         @Override
         public void onPlay()
@@ -321,7 +321,7 @@ public class MusicService extends MediaBrowserServiceCompat implements
             AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
             if (audioManager != null)
                 audioManager.abandonAudioFocus(this);
-        } catch (Exception e) { }
+        } catch (Exception ignored) { }
     }
 
     @Nullable
